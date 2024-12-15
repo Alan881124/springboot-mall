@@ -19,6 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
+// 模擬Http請求並測試controller行為
 @AutoConfigureMockMvc
 public class ProductControllerTest {
 
