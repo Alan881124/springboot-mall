@@ -2,51 +2,38 @@ package com.alanlee.springbootmall.model;
 
 public class OrderItem {
 
-    private Integer order_item_id;
-    private Integer order_id;
-    private Integer product_id;
-    private Integer quantity;
-    private Integer amount;
+    Integer orderItemId;
+    Integer orderId;
+    Integer productId;
+    Integer quantity;
+    Integer amount;
 
-    private String product_name;
-    private String image_url;
+    String productName;
+    String imageUrl;
 
-    public String getProduct_name() {
-        return product_name;
+    public Integer getOrderItemId() {
+        return orderItemId;
     }
 
-    public void setProduct_name(String product_name) {
-        this.product_name = product_name;
+    public void setOrderItemId(Integer orderItemId) {
+        this.orderItemId = orderItemId;
     }
 
-    public String getImage_url() {
-        return image_url;
+    public Integer getOrderId() {
+        return orderId;
     }
 
-    public void setImage_url(String image_url) {
-        this.image_url = image_url;
+    public void setOrderId(Integer orderId) {
+        this.orderId = orderId;
     }
 
-    public Integer getOrder_item_id() {
-        return order_item_id;
+    public Integer getProductId() {
+        return productId;
     }
 
-    public void setOrder_item_id(Integer order_item_id) {
-        this.order_item_id = order_item_id;
+    public void setProductId(Integer productId) {
+        this.productId = productId;
     }
-
-    public Integer getOrder_id() {
-        return order_id;
-    }
-
-    public void setOrder_id(Integer order_id) {
-        this.order_id = order_id;
-    }
-
-    public Integer getProduct_id() {
-        return product_id;
-    }
-
 
     public Integer getQuantity() {
         return quantity;
@@ -64,7 +51,19 @@ public class OrderItem {
         this.amount = amount;
     }
 
-    public void setProduct_id(Integer product_id) {
-        this.product_id = product_id;
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
